@@ -1,8 +1,9 @@
 import java.util.*;
 import commands.*;
+import java.io.*;
 public class Sql
 {
-    
+
     public static void main(String args[])
     {
         Scanner sc = new Scanner(System.in);
@@ -31,7 +32,6 @@ public class Sql
                 Create crOb = new Create();
                 crOb.createtable(words,str);
             }
-        
 
         }
     }
