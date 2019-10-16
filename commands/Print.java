@@ -7,9 +7,7 @@ public class Print
         for(int i=0;i<str.length();i++)
         {
             if(str.charAt(i)=='!'||str.charAt(i)=='@'||str.charAt(i)=='#'||str.charAt(i)=='$'||str.charAt(i)=='%'||str.charAt(i)=='^'||str.charAt(i)=='&'||str.charAt(i)=='*')
-            return true;
-
-            
+            return true;            
         }
         return false;
     }
