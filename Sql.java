@@ -32,6 +32,16 @@ public class Sql
                 Create crOb = new Create();
                 crOb.createtable(words,str);
             }
+            if(words[0].equals("insert"))
+            {
+                Insert irOb = new Insert();
+                irOb.InsertQuery(words,str);
+            }
+            if(words[0].equals("select"))
+            {
+                Select sob = new Select();
+                sob.selectQuery(words,str);
+            }
 
         }
     }

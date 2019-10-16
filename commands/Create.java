@@ -35,11 +35,16 @@ public class Create
                 System.out.println("Wrong Query");
                 return;
             }
-            if(openingBrace+1<str.length())
+            if(str.length()>closingBrace+2)
             {
-                if(str.charAt(openingBrace+1)==' ')
+                System.out.println("Wrong Query");
+                return;
+            }
+            if(closingBrace+1<str.length())
+            {
+                if(str.charAt(closingBrace+1)==' ')
                 {
-                    if(str.charAt(openingBrace+2)!=';')
+                    if(closingBrace+2<str.length() && str.charAt(closingBrace+2)!=';')
                     {
                         System.out.println("Wrong Query");
                         return ;
@@ -117,7 +122,7 @@ public class Create
                 for(int i=0;i<colnames.length;i++)
                 {
                     fw.write(colnames[i]+"|");
-                }   
+                }  
                 fw.write("\n");
                 fw.close();
                 System.out.println("Table Created");

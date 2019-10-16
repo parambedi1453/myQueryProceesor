@@ -1,1 +1,0 @@
-stu|name|rollno|age|phoneno|email|
