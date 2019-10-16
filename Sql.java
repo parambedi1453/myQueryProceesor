@@ -53,7 +53,11 @@ public class Sql
                     Select sob = new Select();
                     sob.selectQuery(words,str);
                 }
-
+                if(words[0].equals("drop"))
+                {
+                    Drop dob = new Drop();
+                    dob.dropQuery(words,str);
+                }
             }
         }
         
