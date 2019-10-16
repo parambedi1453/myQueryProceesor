@@ -1,5 +1,4 @@
 package commands;
-import java.util.*;
 import java.io.*;
 public class Select
 {
@@ -104,6 +103,24 @@ public class Select
                 colnames[k]=colnames[k].trim();
                 System.out.println(colnames[k]);
             }
+            String filename = "";
+            filename+="db/"+tablename+".txt";
+            try
+            {
+                FileReader fr = new FileReader(filename);
+                BufferedReader br = new BufferedReader(fr);
+                String line = "";
+                line=line+ br.readLine();
+                System.out.println(line);
+                
+                fr.close();
+                return;
+            }
+            catch(Exception e)
+            {
+                System.out.println(e);
+            }
+
         }
            
     }
