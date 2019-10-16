@@ -1,0 +1,3 @@
+stu|rollno|name|age|email|
+1|ram|hg|gigi|
+2|fgg|78|ghbk@ghv|

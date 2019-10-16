@@ -7,7 +7,7 @@ public class Insert
     {
         for(int i=0;i<str.length();i++)
         {
-            if(str.charAt(i)=='!'||str.charAt(i)=='@'||str.charAt(i)=='#'||str.charAt(i)=='$'||str.charAt(i)=='%'||str.charAt(i)=='^'||str.charAt(i)=='&'||str.charAt(i)=='*')
+            if(str.charAt(i)=='!'||str.charAt(i)=='#'||str.charAt(i)=='$'||str.charAt(i)=='%'||str.charAt(i)=='^'||str.charAt(i)=='&'||str.charAt(i)=='*')
             return true;
 
             
@@ -22,11 +22,11 @@ public class Insert
             System.out.println("Wrong Query");
             return;
         }
-        if(checkCharacter(str))
-        {
-            System.out.println("Wrong Query");
-            return ;
-        }
+        // if(checkCharacter(str))
+        // {
+        //     System.out.println("Wrong Query");
+        //     return ;
+        // }
         if(!words[1].equals("into"))
         {
             System.out.println("Missing into Keyword");
